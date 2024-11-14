@@ -402,32 +402,13 @@
   				</div>
 
     			<div class="col-md-8">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(projects/persondetection/persondetection.png);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#" onclick="loadMarkdown('projects/persondetection/persondetection.md')">KIA PASS - Working Safety Monitoring System</a></h3>
-							<span>A joint project with KIA MOTORS</span>
-						</div>
-					</div>
-					
-					<div id="markdown-content" style="display: none;"></div> <!-- Container for the converted Markdown content -->
-					
-					<script>
-						async function loadMarkdown(filePath) {
-							const response = await fetch(filePath);
-							const text = await response.text();
-							document.getElementById('markdown-content').innerHTML = marked.parse(text);
-							document.getElementById('markdown-content').style.display = 'block';
-						}
-					</script>
-					
-    				<!-- <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(projects/persondetection/persondetection.png);">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(projects/persondetection/persondetection.png);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
 	    					<h3><a href="projects/persondetection/persondetection.md">KIA PASS - Working Safety Monitoring System</a></h3>
 	    					<span>A joint project with KIA MOTORS</span>
 	    				</div>
-    				</div> -->
+    				</div>
 
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(projects/crackholedetection/crackhole.png);">
     					<div class="overlay"></div>
@@ -437,6 +418,7 @@
 	    				</div>
     				</div>
     			</div>
+				
     			<div class="col-md-4">
     				<div class="row">
     					<div class="col-md-12">
@@ -459,6 +441,7 @@
 	    				</div>
     				</div>
     			</div>
+
     		</div>
     	</div>
     </section>
@@ -766,7 +749,6 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.10/marked.min.js"></script>
   
   <script src="js/main.js"></script>
     
