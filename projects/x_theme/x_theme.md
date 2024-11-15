@@ -15,5 +15,6 @@ Upon launching the application, the user interface presents three buttons that a
 3. Volume Control : Adjust the system's volume.
 
 # Demo
-<video src="Piano_final.mp4"></video>
+<video controls width="600" 
+src="Piano_final.mp4" type="video/mp4"></video>
 
