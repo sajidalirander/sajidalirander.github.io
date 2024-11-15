@@ -770,7 +770,14 @@
 					.then(response => response.text())
 					.then(markdown => {
 						document.getElementById('md-content').innerHTML = marked.parse(markdown);
-						document.getElementById('md-modal').style.display = 'block';
+						const mdModal = document.getElementById('md-modal');
+						mdModal.style.display = 'block';
+						
+						// Dynamically adjust modal size to fit content
+						mdModal.style.width = 'fit-content';
+						mdModal.style.height = 'fit-content';
+						mdModal.style.maxWidth = '90%'; // Optional max width for larger screens
+						mdModal.style.maxHeight = '90%'; // Optional max height for larger screens
 					})
 					.catch(error => console.error('Error loading markdown:', error));
 			});
@@ -789,9 +796,7 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			width: 80%;
-			height: 80%;
-			background: black;
+			background: white;
 			border-radius: 8px;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 			overflow-y: auto;
@@ -809,12 +814,23 @@
 			right: 16px;
 			cursor: pointer;
 			font-size: 24px;
+			color: #333; /* Dark color for visibility */
 		}
 
 		#md-content {
-			margin-top: 24px;
+			font-size: 16px; /* Customize font size as needed */
+			color: #333; /* Customize text color for readability */
+			line-height: 1.6; /* Adjust line height for readability */
+			padding: 16px;
+		}
+
+		/* Optional: Set background and border styling for better readability */
+		#md-content p, #md-content h1, #md-content h2, #md-content h3, #md-content li {
+			margin: 0;
+			padding: 0.5em 0;
 		}
 	</style>
+
     
   </body>
 </html>
