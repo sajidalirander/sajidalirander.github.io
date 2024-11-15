@@ -14,7 +14,7 @@ Upon launching the application, the user interface presents three buttons that a
 2. Instrument Location : Position the instrument interface at the top or bottom of the screen.
 3. Volume Control : Adjust the system's volume.
 
-[Check the demo](Piano_final.mp4)
+[Check the demo](projects/x_theme/Piano_final.mp4)
 
 <!-- # Demo
 <video controls width="600" 
