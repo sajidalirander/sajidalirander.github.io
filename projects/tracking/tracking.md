@@ -10,7 +10,8 @@ The steps involved in the bar code recognition and tracking are as follows:
 5. Recognized ID is used as a tracking ID. If a car is appeared in two cameras, the bar code will be same. Therefore, it is convenient to use the bar code as a tracking ID which resolved ID switch issue in real-time problem.
 6. Conclude results
 
-<img src="projects/tracking/Algorithm.jpg"/>
+<!-- <img src="projects/tracking/Algorithm.jpg"/> -->
+<img src="projects/tracking/Algorithm.jpg" style="width: 80%; max-width: 100%; height: auto;" alt="Algorithm">
 
 
 # Challenges
